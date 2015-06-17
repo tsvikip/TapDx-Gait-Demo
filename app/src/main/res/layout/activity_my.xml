@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/tapdx_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/tapdx_logo_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true" />
+    <TextView android:id="@+id/gait_demo"
+        android:layout_below="@+id/tapdx_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gait_demo"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/theme_blue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal" />
+    <TextView android:id="@+id/TotalSteps"
+        android:layout_above="@+id/layout_on_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_steps"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/gait_demo" />
+    <LinearLayout
+        android:id="@+id/layout_on_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_on_off"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:text="@string/btn_on"
+            android:onClick="sendMessage" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/horizontal_layout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+        <EditText android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_message" />
+        <Button
+            android:id="@+id/save_to_dropbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:clickable="false" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="theme_blue">#3f98d3</color>
+    <color name="theme_blue_light">#8cc1e5</color>
+    <color name="theme_orange">#f69229</color>
+    <color name="theme_green">#49c95b</color>
+    <color name="pm_ss_why_link_color">#f69229</color>
+    <color name="pm_ss1_link_color">#ff550000</color>
+
+    <color name="pm_menu_pressed_button_color">#3f98d3</color>
+    <color name="pm_menu_normal_button_color">#8cc1e5</color>
+
+
+    <!-- TapDx defined colors -->
+    <color name="tapdx_background_blue">#4499D1</color>
+    <color name="tapdx_header_text_color">#F49233</color>
+</resources>
